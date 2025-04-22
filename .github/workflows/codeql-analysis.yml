@@ -27,12 +27,12 @@ jobs:
       #use './gradlew build' if you're using Gradle
 
     - name: Initialize CodeQL  
-      uses: github/codeql-action/init@v2  
+      uses: github/codeql-action/init@v3
       with:  
         languages: 'java'  
         paths: . # Set to the path of your project if different  
 
     - name: Run CodeQL analysis  
-      uses: github/codeql-action/analyze@v2  
+      uses: github/codeql-action/analyze@v3
       with:  
         category: '/path/to/category' # Optional: Set a specific category  
