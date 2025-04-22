@@ -47,8 +47,8 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Run OWASP ZAP scan
-        uses: zaproxy/action-baseline@v0.6.1
+        uses: zaproxy/action-full-scan@v0.12.0
         with:
-          docker_name: 'owasp/zap2docker-stable'
+          # docker_name: 'owasp/zap2docker-stable'
           target: https://hospitable-gratitude-production.up.railway.app/
           cmd_options: '-a'
